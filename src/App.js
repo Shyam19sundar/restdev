@@ -1,25 +1,35 @@
-import React from 'react';
+import React , {useState} from 'react';
 import logo from './logo.svg';
 import './App.css';
+import './index.css'
+import Specials from "./Specials"
+import HomeComponent from "./HomeComponent"
+import MenuListComponent from './MenuListComponent'
+import NavbarComponent from "./NavbarComponent"
+import DishDetailComponent from "./DishDetailComponent"
+import AboutComponent from './AboutComponent'
+import RateusComp from "./RateusComp"
+import Footer from "./Footer"
+import {BrowserRouter as Router,Switch,Route} from "react-router-dom"
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div>
+          <div className="App">
+          <NavbarComponent />
+          <Switch>
+            <Route path="/" exact component={HomeComponent}/>
+            <Route path="/about" component={AboutComponent} />
+            <Route path="/menu" exact component={MenuListComponent} />
+            <Route path="/menu/:name" component={DishDetailComponent} />
+            <Route path="/rateus" component={RateusComp} />
+            <Route path="/specials" component={Specials} />
+          </Switch>
+          </div>
+          <Footer />
+        </div>
+    </Router>
   );
 }
 

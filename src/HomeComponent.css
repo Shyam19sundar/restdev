@@ -1,0 +1,49 @@
+#menu-title , #specials-title , #map-title {
+    height: 250px;
+    width: 100%;
+    margin-bottom: 15px;
+    position: relative;
+    border : 2px solid #3F0C1F;
+    overflow: hidden;
+  }
+  
+  #menu-title:hover , #specials-title:hover , #map-title:hover {
+    box-shadow: 0 1px 5px 1px #cccccc;
+    transition: transform 0.2s ease-in-out;
+    transform: scale(1.1) !important;
+  }
+  
+  .jumbotronnn > img{
+      height: 80vh;
+      width: 81.2vw;
+      margin-top: 50px;
+      margin-bottom: 50px;
+  }
+  #menu-title {
+    background: url('/assets/images/menub.jpg');
+    background-position: center;
+  }
+  
+  #specials-title {
+    background: url("/assets/images/specials.jpg");
+    background-position: center;
+  }
+  
+  #menu-title span, #specials-title span, #map-title span {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.6em;
+    opacity: 0.8;
+  }
+
+  .map-i{
+    width: 100%;
+    height:200px;
+    border: 0;
+  }

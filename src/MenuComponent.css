@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+}
+
+.MenuComponents{
+    flex: 50%;
+}
+
+.singlemenu{
+    position: relative;
+    margin: 20px;
+    align-items: center;
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
+
+.imagetop{
+    width: 25vw;
+    box-shadow: 5px 5px gray;
+}
+
+.nametop{
+    position: absolute;
+    top: 5px;
+    text-decoration: none;
+    color:black;
+    font-weight: bolder;
+    font-style: italic;
+    left: 5px;
+    font-size: 20px;
+}
+
+.singlemenu:hover{
+    transition: transform 0.2s ease-in-out;
+    transform: scale(1.1) !important;
+}
+
+@media (max-width: 768px){
+    .imagetop{
+        width: 100%;
+    }
+}
+
+

@@ -1,0 +1,31 @@
+.singledetail{
+    display: flex;
+}
+
+.singledetail-left{
+    flex: 0.5;
+    margin: 40px;
+}
+
+.singledetail-right{
+    padding-bottom: 2vh;
+}
+
+.singledetail-rightp{
+    padding-bottom: 3vh;
+}
+
+.selectedimage{
+    width: 30vw;
+}
+@media (max-width: 768px){
+    .singledetail{
+        display: block;
+    }
+    .selectedimage{
+        width: 100%;
+    }
+    .singledetail-right{
+        margin: 20px;
+    }
+}

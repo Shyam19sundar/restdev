@@ -1,0 +1,57 @@
+h2{
+    padding-top: 20px;
+    padding-bottom: 8px;
+}
+
+p{
+    font-size: 1.2em;
+}
+
+.about-divcontent{
+    padding-left: 30px;
+}
+
+.card-ca{
+    background-color: gray;
+    color: black;
+    margin-bottom: 55px;
+}
+
+table{
+    border: 1px solid black;
+    color: black;
+    font-style: italic;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-collapse: collapse;
+    background-color: whitesmoke;
+  }
+
+.table-tr{
+    background-color: blue;
+}
+
+table , tr , th {
+    padding: 10px;
+}
+
+.tablehead{
+    color: wheat;
+}
+
+td{
+    padding-left: 50px;
+}
+
+.about-divtablecontent{
+    display: flex;
+}
+
+.about-table{
+    margin: 3vw;
+}
+
+@media (max-width: 768px){
+    .about-divtablecontent{
+        display: block;
+    }
+}
